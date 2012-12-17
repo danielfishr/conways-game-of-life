@@ -48,7 +48,7 @@ void conwayIteration()
         if(getCell(x,y+1))   count++;
         if(count < 2) nextCells[x][y] = false;
         if(count >= 2 && count <= 3 && cells[x][y]) nextCells[x][y] = true; 
-        if(count > 3 && cells[x][y]) nextCells[x][y] = fwalse;
+        if(count > 3 && cells[x][y]) nextCells[x][y] = false;
         if(count == 3 && !cells[x][y]) nextCells[x][y] = true;
     }
   } 
